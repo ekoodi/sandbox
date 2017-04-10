@@ -1,0 +1,10 @@
+<h1>
+  {{title}}
+</h1>
+
+<h2>{{person.givenName}}</h2>
+
+Given name:
+
+<input [(ngModel)]="person.givenName"/>
+<button type="button" (click)="onCreatePerson( person )">CREATE</button>
