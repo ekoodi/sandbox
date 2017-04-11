@@ -24,9 +24,13 @@ export class LdapService {
   public createPerson(vo: LdapVO): Promise<LdapVO> {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
+    
     let url = this.ldap.uri + this.ldap.personuri + this.crud.c;
+    
     let params = new URLSearchParams();
-    return this.http.post(url, JSON.stringify(vo), { headers: headers })
+    
+    return this.http.post(url, 
+      JSON.stringify(vo), { headers: headers })
       .toPromise()
       .then(res => {
         return <LdapVO>res.json();
@@ -35,7 +39,24 @@ export class LdapService {
       .catch(this.handleError);
   }
   
-  
+    public updatePerson(vo: LdapVO): Promise<LdapVO> {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    
+    let url = this.ldap.uri + this.ldap.personuri + this.crud.u;
+    
+    let params = new URLSearchParams();
+    
+    return this.http.post(url, 
+      JSON.stringify(vo), { headers: headers })
+      .toPromise()
+      .then(res => {
+        return <LdapVO>res.json();
+      }
+      )
+      .catch(this.handleError);
+  }
+   
   private handleError(error: any): Promise<any> {
       console.error('An error occurred', error); // for demo purposes only
       return Promise.reject(error.message || error);

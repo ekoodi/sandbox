@@ -1,6 +1,7 @@
 package fi.saimia.ekoodi.sandbox.layer.service.ldap;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 public class ServiceEvent implements Serializable {
 
@@ -9,6 +10,7 @@ public class ServiceEvent implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	private String uuid = UUID.randomUUID().toString();
 	private String message;
 	private int status;
 	private String code;
@@ -36,6 +38,12 @@ public class ServiceEvent implements Serializable {
 	}
 	public void setSeverity(Severity severity) {
 		this.severity = severity;
+	}
+	public String getUuid() {
+		return uuid;
+	}
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
 	
 	

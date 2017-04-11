@@ -26,16 +26,32 @@ export class AppComponent {
     console.log( person.givenName );
     let vo = new LdapVO();
     vo.person=person;
-    
-    this.service.createPerson(vo).then(item => {
+    this.service.createPerson(vo).then( item => {
       console.log(item.event);
       this.person = item.person;
             
     });    
-    
-    
-    
-    
   }
+  
+  onUpdatePerson( person : InetOrgPerson  ):void {
+    console.log( person.givenName );
+    let vo = new LdapVO();
+    vo.person=person;
+    this.service.updatePerson(vo).then( item => {
+      console.log(item.event);
+      
+      if ( item.event.status != 200 ){
+        // OK MESSAGE
+         this.person = item.person;
+       
+      }else {
+        // POPUP ERROR MESSAGE DIALOG ...
+        
+      }
+      
+            
+    });    
+  }
+  
   
 }

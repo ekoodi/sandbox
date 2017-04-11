@@ -11,6 +11,7 @@ public class InetOrgPerson implements Serializable{
 	
 	private String givenName;
 	private String sn;
+	
 	public String getGivenName() {
 		return givenName;
 	}

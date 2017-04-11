@@ -18,12 +18,12 @@ export class ServiceEvent {
   status : number = 200;
   message : string = "OK";
   code : string;
+  uuid? : string;
 }
 
 
 
 export class InetOrgPerson{
-  
   givenName? : string;
   sn? :string;
 }

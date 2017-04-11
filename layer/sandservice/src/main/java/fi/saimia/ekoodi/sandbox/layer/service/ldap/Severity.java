@@ -2,7 +2,7 @@ package fi.saimia.ekoodi.sandbox.layer.service.ldap;
 
 public enum Severity {
 	
-	INFO(6);
+	INFO(6), ERROR(3);
 	
     private final int value;
 
