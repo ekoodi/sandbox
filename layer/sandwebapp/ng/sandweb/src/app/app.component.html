@@ -2,10 +2,11 @@
   {{title}}
 </h1>
 
-<h2>{{person.givenName}}</h2>
+<h2>{{person.givenName}} {{person.sn}}</h2>
 
 Given name:
 
 <input [(ngModel)]="person.givenName"/>
-<button type="button" (click)="onCreatePerson( person )">CREATE</button>
+<button type="button" (click)="onCreatePerson( person )">Create</button>
+<button type="button" (click)="onReadPerson( person )">Read</button>
 <button type="button" (click)="onUpdatePerson( person )">Update</button>

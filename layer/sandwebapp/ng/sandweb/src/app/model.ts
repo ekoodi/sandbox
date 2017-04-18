@@ -26,11 +26,12 @@ export class ServiceEvent {
 export class InetOrgPerson{
   givenName? : string;
   sn? :string;
+  cn?: string ="123";
 }
 
 
 
-export class LdapVO{
+export class OrgVO{
   event: ServiceEvent;
   person: InetOrgPerson;
 }

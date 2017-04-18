@@ -1,4 +1,4 @@
-package fi.saimia.ekoodi.sandbox.layer.service.ldap;
+package fi.saimia.ekoodi.sandbox.layer.service.mdl;
 
 import java.io.Serializable;
 import java.util.UUID;

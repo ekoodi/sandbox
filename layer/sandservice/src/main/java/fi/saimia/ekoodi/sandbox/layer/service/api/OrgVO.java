@@ -1,8 +1,11 @@
-package fi.saimia.ekoodi.sandbox.layer.service.ldap;
+package fi.saimia.ekoodi.sandbox.layer.service.api;
 
 import java.io.Serializable;
 
-public class LdapVO implements Serializable {
+import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
+import fi.saimia.ekoodi.sandbox.layer.service.mdl.ServiceEvent;
+
+public class OrgVO implements Serializable {
 	
 	/**
 	 * 

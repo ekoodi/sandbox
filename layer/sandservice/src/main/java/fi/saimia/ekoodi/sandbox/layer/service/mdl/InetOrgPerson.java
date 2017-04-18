@@ -1,4 +1,4 @@
-package fi.saimia.ekoodi.sandbox.layer.service.ldap;
+package fi.saimia.ekoodi.sandbox.layer.service.mdl;
 
 import java.io.Serializable;
 
@@ -11,6 +11,7 @@ public class InetOrgPerson implements Serializable{
 	
 	private String givenName;
 	private String sn;
+	private String cn;
 	
 	public String getGivenName() {
 		return givenName;
@@ -23,6 +24,12 @@ public class InetOrgPerson implements Serializable{
 	}
 	public void setSn(String sn) {
 		this.sn = sn;
+	}
+	public String getCn() {
+		return cn;
+	}
+	public void setCn(String cn) {
+		this.cn = cn;
 	}
 
 }

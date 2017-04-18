@@ -1,4 +1,4 @@
-package fi.saimia.ekoodi.sandbox.layer.service.ldap;
+package fi.saimia.ekoodi.sandbox.layer.service.mdl;
 
 public enum Severity {
 	

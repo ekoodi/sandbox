@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { LdapService } from './ldap.service';
+import { OrgService } from './org.service';
 
 
 
@@ -17,7 +17,7 @@ import { LdapService } from './ldap.service';
     FormsModule,
     HttpModule
   ],
-  providers: [LdapService],
+  providers: [OrgService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

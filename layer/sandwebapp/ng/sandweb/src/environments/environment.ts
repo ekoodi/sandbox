@@ -7,10 +7,11 @@ export const environment = {
   production: false,
   crud:{
     c:'/create',
-    u:'/update'
+    u:'/update',
+    r:"/read"
   },
-  ldap:{
-    uri:'http://127.0.0.1:48080/ldap',
+  org:{
+    uri:'http://127.0.0.1:48080/org',
     personuri:'/person'
   }
 };
