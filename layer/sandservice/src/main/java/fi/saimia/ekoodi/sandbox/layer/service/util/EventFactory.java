@@ -8,7 +8,7 @@ import fi.saimia.ekoodi.sandbox.layer.service.mdl.ServiceEvent;
 import fi.saimia.ekoodi.sandbox.layer.service.mdl.Severity;
 
 @Component
-public class EventHelperBean {
+public class EventFactory {
 
 	
 	public ServiceEvent initEventByBaseException( ServiceEvent event,  String msg, BaseException ex, Log log  ){

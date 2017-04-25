@@ -14,7 +14,7 @@ import fi.saimia.ekoodi.sandbox.layer.service.biz.OrgService;
 import fi.saimia.ekoodi.sandbox.layer.service.cc.BaseException;
 import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
 import fi.saimia.ekoodi.sandbox.layer.service.mdl.ServiceEvent;
-import fi.saimia.ekoodi.sandbox.layer.service.util.EventHelperBean;
+import fi.saimia.ekoodi.sandbox.layer.service.util.EventFactory;
 
 @RestController
 @RequestMapping("/org")
@@ -24,12 +24,10 @@ public class OrgFacade {
 	private OrgService biz;
 	
 	@Autowired
-	private EventHelperBean ehelp;
+	private EventFactory ehelp;
 	
 	private static final Log LOG = LogFactory.getLog(OrgFacade.class); 
 
-
-	
 	@RequestMapping(method = RequestMethod.POST, value="/person/create")
 	public OrgVO createPerson(@RequestBody OrgVO vo) {
 		ServiceEvent event = new ServiceEvent();

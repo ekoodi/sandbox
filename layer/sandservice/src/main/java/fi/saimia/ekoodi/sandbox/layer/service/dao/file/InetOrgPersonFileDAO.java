@@ -10,10 +10,11 @@ import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
 import fi.saimia.ekoodi.sandbox.layer.service.cc.DaoException;
+import fi.saimia.ekoodi.sandbox.layer.service.dao.PersonDAO;
 import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
 
-@Component
-public class InetOrgPersonFileDAO {
+@Component("PersonDAOImpl")
+public class InetOrgPersonFileDAO  implements PersonDAO{
 
 	private static String fname = "file:///D:/work/ekoodi/sandbox/layer/sandservice/src/main/resources/mock/person.json";
 	private Gson gson = new Gson();
@@ -31,6 +32,12 @@ public class InetOrgPersonFileDAO {
 		
 		
 		return R;
+	}
+
+	@Override
+	public InetOrgPerson createInetOrgPerson(InetOrgPerson person) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
