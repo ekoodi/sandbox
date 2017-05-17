@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fi.saimia.ekoodi.sandbox.layer.service.biz.OrgService;
 import fi.saimia.ekoodi.sandbox.layer.service.cc.BaseException;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.ServiceEvent;
-import fi.saimia.ekoodi.sandbox.layer.service.util.EventFactory;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.InetOrgPerson;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.ServiceEvent;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.util.EventFactory;
 
 @RestController
 @RequestMapping("/org")

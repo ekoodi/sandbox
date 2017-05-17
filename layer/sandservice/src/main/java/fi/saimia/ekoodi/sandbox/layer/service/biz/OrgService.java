@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 
 import fi.saimia.ekoodi.sandbox.layer.service.cc.DaoException;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.InetOrgPerson;
 import fi.saimia.ekoodi.sandbox.layer.service.dao.PersonDAO;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
 
 @Configuration
 public class OrgService {

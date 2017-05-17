@@ -1,4 +1,4 @@
-package fi.saimia.ekoodi.sandbox.layer.service.mdl;
+package fi.saimia.ekoodi.sandbox.layer.service.cc.mdl;
 
 import java.io.Serializable;
 

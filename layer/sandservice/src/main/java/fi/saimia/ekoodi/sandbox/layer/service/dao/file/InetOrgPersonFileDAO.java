@@ -10,8 +10,8 @@ import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
 import fi.saimia.ekoodi.sandbox.layer.service.cc.DaoException;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.InetOrgPerson;
 import fi.saimia.ekoodi.sandbox.layer.service.dao.PersonDAO;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
 
 @Component("PersonDAOImpl")
 public class InetOrgPersonFileDAO  implements PersonDAO{

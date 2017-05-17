@@ -1,7 +1,7 @@
 package fi.saimia.ekoodi.sandbox.layer.service.dao;
 
 import fi.saimia.ekoodi.sandbox.layer.service.cc.DaoException;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.InetOrgPerson;
 
 public interface PersonDAO {
 

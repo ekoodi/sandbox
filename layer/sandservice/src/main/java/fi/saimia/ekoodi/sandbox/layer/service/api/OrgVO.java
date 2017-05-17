@@ -2,8 +2,8 @@ package fi.saimia.ekoodi.sandbox.layer.service.api;
 
 import java.io.Serializable;
 
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.InetOrgPerson;
-import fi.saimia.ekoodi.sandbox.layer.service.mdl.ServiceEvent;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.InetOrgPerson;
+import fi.saimia.ekoodi.sandbox.layer.service.cc.mdl.ServiceEvent;
 
 public class OrgVO implements Serializable {
 	
