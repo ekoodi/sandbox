@@ -145,6 +145,7 @@ go
 /*==============================================================*/
 /* Table: Customer                                              */
 /*==============================================================*/
+
 create table Customer (
    Id                   int                  identity,
    FirstName            nvarchar(40)         not null,
