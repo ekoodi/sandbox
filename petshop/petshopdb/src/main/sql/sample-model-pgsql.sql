@@ -25,7 +25,7 @@ FirstName ASC
 /*==============================================================*/
 /* Table: "Order"                                               */
 /*==============================================================*/
-create table "Order" (
+create table Orders (
    Id                   SERIAL,
    OrderDate            timestamp  without time zone  not null default now()::timestamp,
    OrderNumber          varchar(10)         null,
@@ -37,7 +37,7 @@ create table "Order" (
 /*==============================================================*/
 /* Index: IndexOrderCustomerId                                  */
 /*==============================================================*/
-create index IndexOrderCustomerId on "Order" (
+create index IndexOrderCustomerId on Orders (
 CustomerId ASC
 )
 ;
@@ -45,7 +45,7 @@ CustomerId ASC
 /*==============================================================*/
 /* Index: IndexOrderOrderDate                                   */
 /*==============================================================*/
-create index IndexOrderOrderDate on "Order" (
+create index IndexOrderOrderDate on Orders (
 OrderDate ASC
 )
 ;
@@ -141,14 +141,14 @@ Country ASC
 )
 ;
 
-alter table "Order"
+alter table Orders
    add constraint FK_ORDER_REFERENCE_CUSTOMER foreign key (CustomerId)
       references Customer (Id)
 ;
 
 alter table OrderItem
    add constraint FK_ORDERITE_REFERENCE_ORDER foreign key (OrderId)
-      references "Order" (Id)
+      references Orders (Id)
 ;
 
 alter table OrderItem
