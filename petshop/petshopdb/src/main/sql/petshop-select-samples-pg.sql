@@ -4,6 +4,3 @@ ON c.id = p.customerid
 JOIN purchaseitem pi
 ON p.id = pi.purchaseid
 WHERE pi.id = 1;
-
-
-
