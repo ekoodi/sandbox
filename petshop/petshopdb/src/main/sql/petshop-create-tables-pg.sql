@@ -78,7 +78,8 @@ ProductName ASC
 create table Supplier (
    Id                   SERIAL,
    CompanyName          varchar(40)         not null,
-   ContactName          varchar(50)         null,
+   ContactFirstName     varchar(50)         null,
+   ContactLastName     varchar(50)         null,
    ContactTitle         varchar(40)         null,
    City                 varchar(40)         null,
    Country              varchar(40)         null,
